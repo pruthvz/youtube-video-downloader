@@ -11,7 +11,7 @@ def downlod():
         youtube = pytube.YouTube(video_url)
         video = youtube.streams.first()
         path = os.path.join(
-            "UR DIRECTORY TO /videos")
+            "D:\\aProgrammingFile\\Python\\Tkinter Programs\\yt-downloader\\videos")
         video.download(path)
         notif.config(fg="green", text="Video successfully downloaded!")
 
